@@ -1,0 +1,9 @@
+@import "var";
+@import "fonts";
+@import "normalize";
+@include normalize();
+@import "default";
+
+/*Подключение стилей плагинов */
+@import "libs/swiper-bundle.min";
+@import 'libs/choices.min';

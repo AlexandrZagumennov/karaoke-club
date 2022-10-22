@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Мета -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#111111">
+
+	<!-- Фавикон -->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon/favicon.svg">
+		<!-- Для Apple -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/faciconApple.png">
+		<!-- Для Safari -->
+	<link rel="mask-icon" href="img/favicon/favicon.svg" color="#000000">
+
+	<!-- Предзагрузка шрифтов -->
+	<link rel="preload" href="fonts/montserrat-400.woff2" as="font" type="font/woff2" crossorigin>
+
+	<!-- Подключение стилей. Сработают стартовые стили -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const createLink = url => {
+				const link = document.createElement('link');
+				link.rel = 'stylesheet';
+				link.href = url;
+				document.head.append(link);
+			}
+			createLink('css/index.min.css');
+		})
+	</script>
+
+	<!-- Подключение JS -->
+  <script defer src="js/index.min.js"></script>
+
+	<!-- Заголовок страницы -->
+	<title>Проект</title>
+</head>
+
+<body>
+  @@include('./parts/header.html')
+	@@include('./parts/section.html')
+  @@include('./parts/footer.html')
+</body>
+</html>

@@ -1,42 +1,18 @@
-$primary: #F87C09;
-$primaryLight: #FF922E;
-$primaryDark: #AEAAAA;
+// Типографика
+$main-font-family: "Muller";
+$main-font-size: 14px;
+$main-line-height: 100%;
+$main-bg-color: #131517;;
+$main-color: #fff;
 
-$secondary: #EAEAEA;
-$secondaryDark: #6B6B6B;
+// Размеры контейнера
+$content-width: 1800px;
+$container-offset: 15px;
+$container-width: calc($content-width + ($container-offset) * 2);
 
-$black: #000;
-$white: #FFF;
-
-$tablet: 768px;
-$laptop: 1024px;
-$desktop: 1280px;
-
-@mixin tablet {
-  @media (min-width: #{$tablet}) {
-    @content;
-  }
-}
-
-@mixin laptop {
-  @media (min-width: #{$laptop}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop}) {
-    @content;
-  }
-}
-
-@mixin font($name, $weight) {
-  font: {
-    family: $name;
-    weight: $weight;
-    display: swap;
-  }
-  src: url("../fonts/#{ $name }-#{ $weight }.woff2")  format("woff2"),
-    url("../fonts/#{ $name }-#{ $weight }.woff")  format("woff"),
-}
-
+// Брейк-поинты
+$desktop: 1600px;
+$laptop: 1200px;
+$tablet: 1000px;
+$small-tablet: 800px;
+$mobile: 560px;

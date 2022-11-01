@@ -1,11 +1,19 @@
 @font-face {
-  @include font(Montserrat, 400)
+  @include font(Muller, 400);
 }
 
 @font-face {
-  @include font(Montserrat, 500)
+  @include font(Muller, 500);
 }
 
 @font-face {
-  @include font(Montserrat, 700)
+  @include font(Muller, 700);
+}
+
+@font-face {
+  @include font(Muller, 800);
+}
+
+@font-face {
+  @include font(Muller, 900);
 }

@@ -8,15 +8,19 @@
 	<meta name="theme-color" content="#111111">
 
 	<!-- Фавикон -->
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="img/favicon/favicon.svg">
+	<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon/favicon.svg">
 		<!-- Для Apple -->
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/faciconApple.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/faciconApple.png">
 		<!-- Для Safari -->
-	<link rel="mask-icon" href="img/favicon/favicon.svg" color="#000000">
+	<link rel="mask-icon" href="favicon/favicon.svg" color="#000000">
 
 	<!-- Предзагрузка шрифтов -->
-	<link rel="preload" href="fonts/montserrat-400.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Muller-400.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Muller-500.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Muller-700.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Muller-800.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Muller-900.woff2" as="font" type="font/woff2" crossorigin>
 
 	<!-- Подключение стилей. Сработают стартовые стили -->
 	<script>
@@ -35,12 +39,12 @@
   <script defer src="js/index.min.js"></script>
 
 	<!-- Заголовок страницы -->
-	<title>Проект</title>
+	<title>Караоке Клуб</title>
 </head>
 
-<body>
+<body class="page__body js-page__body">
   @@include('./parts/header.html')
-	@@include('./parts/section.html')
-  @@include('./parts/footer.html')
+	<!--@@include('./parts/section.html')
+  @@include('./parts/footer.html')-->
 </body>
 </html>

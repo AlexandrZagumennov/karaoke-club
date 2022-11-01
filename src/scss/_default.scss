@@ -12,24 +12,19 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  font-family: Montserrat, Arial, sans-serif;
-  line-height: 1.3;
-  font-size: 12px;
+  font-family: $main-font-family;
+  line-height: 24px;
+  font-size: 16px;
   font-weight: 400;
-  color: $white; /*цвет под ваш проект*/
-  background-color: $black; /*цвет под ваш проект*/
-  background-image: url(../img/sprite.svg#fire);
-  background-position: center top 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  color: $main-color; /*цвет под ваш проект*/
+  background-color: $main-bg-color; /*цвет под ваш проект*/
 }
 
-
-img, svg {
+img,
+svg {
   max-width: 100%;
   height: auto;
 }
-
 
 button {
   padding: 0;
@@ -72,9 +67,14 @@ iframe {
   overflow: hidden;
 }
 
+.page {
+  &__body {
+    overflow-x: hidden;
+  }
+}
 
 .container {
-  max-width: 1184px;
-  padding: 0 12px;
   margin: 0 auto;
+  padding: 0 $container-offset;
+  max-width: $container-width;
 }

@@ -66,7 +66,7 @@ const path = {
 		assets: ['src/fonts/**/*.*', 'src/icons/**/*.*', 'src/video/**/*.*', 'src/public/**/*.*']
 	},
 	watch: {
-		html: 'src/*.html',
+		html: 'src/**/*.html',
 		js: 'src/**/*.js',
 		pug: 'src/**/*.pug',
 		css: 'src/**/*.scss',
